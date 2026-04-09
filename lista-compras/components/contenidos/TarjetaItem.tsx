@@ -31,14 +31,26 @@ const styles = StyleSheet.create({
     justifyContent: "space-between",
     padding: 12,
   },
-  text: { fontSize: 16 },
-  done: { textDecorationLine: "line-through", color: "#999" },
+  text: { 
+    fontSize: 16,
+    color: "#fff",
+  },
+  done: { 
+    textDecorationLine: "line-through", 
+    color: "#999", 
+  },
   pill: {
     minWidth: 28,
     height: 28,
     borderRadius: 14,
     textAlign: "center",
   },
-  todoPill: { backgroundColor: "#eee" },
-  donePill: { backgroundColor: "#2ecc71", color: "#fff" },
+  todoPill: { 
+    backgroundColor: "#eee",
+    color: "#000", // Para que el punto se vea claro sobre fondo gris
+  },
+  donePill: { 
+    backgroundColor: "#2ecc71", 
+    color: "#fff", 
+  },
 });

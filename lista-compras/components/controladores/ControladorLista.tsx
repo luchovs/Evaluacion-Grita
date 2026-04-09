@@ -2,7 +2,6 @@ import { useListaDeCompras } from "../../hooks/useListaDeCompras";
 import { ContenedorPrincipal } from "../contenedores/ContenedorPrincipal";
 import { FormularioItem } from "../contenidos/FormularioItem";
 import { ListaItems } from "../contenidos/ListaItems";
-import { TarjetaItem } from "../contenidos/TarjetaItem";
 import { Titulo } from "../contenidos/Titulo";
 
 export function ControladorLista() {
@@ -17,13 +16,8 @@ export function ControladorLista() {
 
       <ListaItems
         items={items}
-        renderItem={({ item }: any) => (
-          <TarjetaItem
-            item={item}
-            onToggle={toggleItem}
-            onDelete={eliminarItem}
-          />
-        )}
+        onToggle={toggleItem}
+        onDelete={eliminarItem}
       />
     </ContenedorPrincipal>
   );
